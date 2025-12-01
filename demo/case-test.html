@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bbva-feature-product-detail-accounts-pe demo</title>
+    <link rel="icon" href="./favicon.svg">
+    <script type="module" src="./demo.js"></script>
+  </head>
+
+  <body>
+    <bbva-feature-oc-car-insurance id="feature"></bbva-feature-oc-car-insurance>
+    <!-- <script type="module">
+
+      import { simulateCallService } from './demo-utils.js';
+      import { globalOffersMock } from './mocks/offerts.js';
+      import {
+          financial,
+          productSelectedCurrencyUsd
+      } from './mocks/caseAccountDefault.js';
+      import { getAccountResponse } from './mocks/GetAccount.js';
+      import { getAccountsIndicatorsResponse } from './mocks/GetAccountsIndicators.js';
+      import { getAccountBalanceResponse } from './mocks/GetAccountBalance.js';
+      import { getTransactionsListResponse } from './mocks/GetTransactionsList.js';
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const feature = document.querySelector('bbva-feature-product-detail-accounts-pe');
+        feature.accountsApiVersion = '2';
+        feature.balanceApiVersion = '0';
+        feature.financialAccounts = financial;
+        feature.account = productSelectedCurrencyUsd;
+        feature.offers = globalOffersMock;
+        feature.continuePageOffer = 'account';
+        feature.init();
+      });
+
+      simulateCallService(
+        getAccountResponse,
+        getAccountsIndicatorsResponse,
+        getAccountBalanceResponse,
+        getTransactionsListResponse
+      );
+
+    </script> -->
+  </body>
+</html>
